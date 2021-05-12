@@ -34,8 +34,12 @@ public class Test1_firefox {
 	@Test
 	public void test2() {
 		driver.findElement(By.xpath("//input[@aria-label='Search' and @name='q']")).sendKeys("Hi Jk Here");
+	}
+	
+	@AfterClass
+	public void close() {
 		driver.close();		
-
+		driver.quit();
 	}
 	
 }
