@@ -19,7 +19,7 @@ public class Test1_chrome {
 	public  void initBrowser() throws MalformedURLException {
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setPlatform(Platform.LINUX);		
-		URL url = new URL("http://192.168.99.104:4444/wd/hub");
+		URL url = new URL("http://192.168.99.106:4444/wd/hub");
 		driver = new RemoteWebDriver(url,cap);		
 	}
 	
