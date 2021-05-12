@@ -34,7 +34,6 @@ public class Test1_chrome {
 	public void test2() {
 		driver.findElement(By.xpath("//input[@aria-label='Search' and @name='q']")).sendKeys("Hi Jk Here");
 		driver.close();	
-		driver.quit();
 	}
 	
 }
