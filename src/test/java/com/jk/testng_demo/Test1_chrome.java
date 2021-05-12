@@ -33,7 +33,12 @@ public class Test1_chrome {
 	@Test
 	public void test2() {
 		driver.findElement(By.xpath("//input[@aria-label='Search' and @name='q']")).sendKeys("Hi Jk Here");
-		driver.close();	
+	}
+	
+	@AfterClass
+	public void close() {
+		driver.close();		
+		driver.quit();
 	}
 	
 }
